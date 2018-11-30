@@ -40,11 +40,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZT6-tf-Zm9" userLabel="Bucket Item Signature">
-                                            <rect key="frame" x="176" y="56" width="130" height="21"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="21" id="7Xu-0n-PPG"/>
-                                                <constraint firstAttribute="width" constant="130" id="MKk-MA-uXR"/>
-                                            </constraints>
+                                            <rect key="frame" x="261" y="56" width="46" height="21"/>
                                             <attributedString key="attributedText">
                                                 <fragment content="author">
                                                     <attributes>
@@ -64,37 +60,32 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bucket item here" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hsf-nZ-nrr" userLabel="Bucket Item Text">
-                                            <rect key="frame" x="78" y="20" width="129" height="21"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="129" id="5MZ-rI-rph"/>
-                                            </constraints>
+                                            <rect key="frame" x="78" y="20" width="127.5" height="21"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="ZT6-tf-Zm9" firstAttribute="top" secondItem="Hsf-nZ-nrr" secondAttribute="bottom" constant="15" id="2ai-vc-bYH"/>
-                                        <constraint firstItem="Hsf-nZ-nrr" firstAttribute="leading" secondItem="gqu-kR-D4p" secondAttribute="trailing" constant="38" id="BFh-Fv-bLa"/>
-                                        <constraint firstItem="gqu-kR-D4p" firstAttribute="top" secondItem="Hsf-nZ-nrr" secondAttribute="top" id="KeP-sB-rrP"/>
-                                        <constraint firstItem="gqu-kR-D4p" firstAttribute="top" secondItem="Lb2-7B-Fek" secondAttribute="topMargin" constant="9" id="UFt-6I-0Ma"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="ZT6-tf-Zm9" secondAttribute="trailing" constant="53" id="cZC-K0-KzK"/>
-                                        <constraint firstItem="gqu-kR-D4p" firstAttribute="leading" secondItem="Lb2-7B-Fek" secondAttribute="leadingMargin" constant="4" id="fBP-1j-G8u"/>
-                                        <constraint firstItem="gqu-kR-D4p" firstAttribute="centerY" secondItem="Lb2-7B-Fek" secondAttribute="centerY" id="fJJ-gN-gH6"/>
-                                        <constraint firstItem="ZT6-tf-Zm9" firstAttribute="bottom" secondItem="Lb2-7B-Fek" secondAttribute="bottomMargin" id="tro-WM-nHc"/>
+                                        <constraint firstItem="gqu-kR-D4p" firstAttribute="top" secondItem="Lb2-7B-Fek" secondAttribute="topMargin" constant="9" id="61K-iG-zfp"/>
+                                        <constraint firstItem="gqu-kR-D4p" firstAttribute="leading" secondItem="Lb2-7B-Fek" secondAttribute="leadingMargin" constant="4" id="6o4-Vb-lWQ"/>
+                                        <constraint firstItem="gqu-kR-D4p" firstAttribute="centerY" secondItem="Lb2-7B-Fek" secondAttribute="centerY" id="84u-3i-IUk"/>
+                                        <constraint firstItem="Hsf-nZ-nrr" firstAttribute="leading" secondItem="gqu-kR-D4p" secondAttribute="trailing" constant="38" id="IEF-eY-RJb"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Hsf-nZ-nrr" secondAttribute="bottom" constant="36" id="ZeM-BG-pd6"/>
+                                        <constraint firstItem="ZT6-tf-Zm9" firstAttribute="top" secondItem="Lb2-7B-Fek" secondAttribute="topMargin" constant="45" id="byt-Cc-noP"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="ZT6-tf-Zm9" secondAttribute="trailing" constant="52" id="ian-YV-2RZ"/>
+                                        <constraint firstItem="gqu-kR-D4p" firstAttribute="top" secondItem="Hsf-nZ-nrr" secondAttribute="top" id="sc6-TE-whr"/>
+                                        <constraint firstItem="ZT6-tf-Zm9" firstAttribute="bottom" secondItem="Lb2-7B-Fek" secondAttribute="bottomMargin" id="vsk-1d-Au4"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="bucketItemSignature" destination="ZT6-tf-Zm9" id="Ceg-pT-O1E"/>
-                                    <outlet property="bucketItemSymbol" destination="gqu-kR-D4p" id="CE1-po-SP3"/>
-                                    <outlet property="bucketItemText" destination="Hsf-nZ-nrr" id="545-M8-UXX"/>
+                                    <outlet property="bucketItemSignature" destination="ZT6-tf-Zm9" id="SSq-ny-XWf"/>
+                                    <outlet property="bucketItemSymbol" destination="gqu-kR-D4p" id="iPK-7a-fL3"/>
+                                    <outlet property="bucketItemText" destination="Hsf-nZ-nrr" id="lA9-Hw-vQq"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="bucketItemSignature" destination="ZT6-tf-Zm9" id="hQ9-cB-7vx"/>
-                            <outlet property="bucketItemSymbol" destination="gqu-kR-D4p" id="QB7-Ve-6zw"/>
-                            <outlet property="bucketItemText" destination="Hsf-nZ-nrr" id="Aw6-P0-MTW"/>
                             <outlet property="dataSource" destination="AMN-Al-fKl" id="X9v-WZ-BlT"/>
                             <outlet property="delegate" destination="AMN-Al-fKl" id="DOR-Nu-cRh"/>
                         </connections>

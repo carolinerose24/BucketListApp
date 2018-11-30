@@ -8,10 +8,14 @@
 
 import UIKit
 
-class BucketItemCellTableViewCell: UITableViewCell {
+class BucketItemCellTableViewCell: UITableViewCell
+{
+
     @IBOutlet weak var bucketItemSymbol: UILabel!
     @IBOutlet weak var bucketItemText: UILabel!
     @IBOutlet weak var bucketItemSignature: UILabel!
+    
+
     
     var currentBucketItem : BucketItem!
     {
