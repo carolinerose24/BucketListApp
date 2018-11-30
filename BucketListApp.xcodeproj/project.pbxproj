@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		AB27B23721B183160030C281 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB27B23621B183160030C281 /* AppDelegate.swift */; };
-		AB27B23921B183160030C281 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB27B23821B183160030C281 /* ViewController.swift */; };
 		AB27B23C21B183160030C281 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB27B23A21B183160030C281 /* Main.storyboard */; };
 		AB27B23E21B183180030C281 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB27B23D21B183180030C281 /* Assets.xcassets */; };
 		AB27B24121B183180030C281 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB27B23F21B183180030C281 /* LaunchScreen.storyboard */; };
+		AB27B24C21B1847E0030C281 /* DataViewControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB27B24B21B1847E0030C281 /* DataViewControllerTableViewController.swift */; };
+		AB27B24E21B184B70030C281 /* BucketItemCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB27B24D21B184B70030C281 /* BucketItemCellTableViewCell.swift */; };
+		AB27B25121B184F60030C281 /* BucketItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB27B25021B184F60030C281 /* BucketItem.swift */; };
+		AB27B25321B185920030C281 /* bucket18.csv in Resources */ = {isa = PBXBuildFile; fileRef = AB27B25221B185920030C281 /* bucket18.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AB27B23321B183160030C281 /* BucketListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB27B23621B183160030C281 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AB27B23821B183160030C281 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AB27B23B21B183160030C281 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB27B23D21B183180030C281 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB27B24021B183180030C281 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB27B24221B183180030C281 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB27B24B21B1847E0030C281 /* DataViewControllerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewControllerTableViewController.swift; sourceTree = "<group>"; };
+		AB27B24D21B184B70030C281 /* BucketItemCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItemCellTableViewCell.swift; sourceTree = "<group>"; };
+		AB27B25021B184F60030C281 /* BucketItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItem.swift; sourceTree = "<group>"; };
+		AB27B25221B185920030C281 /* bucket18.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = bucket18.csv; path = ../../../../../Downloads/bucket18.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,49 @@
 		AB27B23521B183160030C281 /* BucketListApp */ = {
 			isa = PBXGroup;
 			children = (
-				AB27B23621B183160030C281 /* AppDelegate.swift */,
-				AB27B23821B183160030C281 /* ViewController.swift */,
-				AB27B23A21B183160030C281 /* Main.storyboard */,
-				AB27B23D21B183180030C281 /* Assets.xcassets */,
-				AB27B23F21B183180030C281 /* LaunchScreen.storyboard */,
-				AB27B24221B183180030C281 /* Info.plist */,
+				AB27B24821B183630030C281 /* Resources */,
+				AB27B24921B183760030C281 /* Controller */,
+				AB27B24A21B183AB0030C281 /* View */,
+				AB27B24F21B184D80030C281 /* Model */,
 			);
 			path = BucketListApp;
+			sourceTree = "<group>";
+		};
+		AB27B24821B183630030C281 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AB27B23621B183160030C281 /* AppDelegate.swift */,
+				AB27B23D21B183180030C281 /* Assets.xcassets */,
+				AB27B24221B183180030C281 /* Info.plist */,
+				AB27B25221B185920030C281 /* bucket18.csv */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AB27B24921B183760030C281 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AB27B24B21B1847E0030C281 /* DataViewControllerTableViewController.swift */,
+				AB27B24D21B184B70030C281 /* BucketItemCellTableViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AB27B24A21B183AB0030C281 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB27B23A21B183160030C281 /* Main.storyboard */,
+				AB27B23F21B183180030C281 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB27B24F21B184D80030C281 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB27B25021B184F60030C281 /* BucketItem.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB27B24121B183180030C281 /* LaunchScreen.storyboard in Resources */,
+				AB27B25321B185920030C281 /* bucket18.csv in Resources */,
 				AB27B23E21B183180030C281 /* Assets.xcassets in Resources */,
 				AB27B23C21B183160030C281 /* Main.storyboard in Resources */,
 			);
@@ -135,7 +177,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB27B23921B183160030C281 /* ViewController.swift in Sources */,
+				AB27B25121B184F60030C281 /* BucketItem.swift in Sources */,
+				AB27B24E21B184B70030C281 /* BucketItemCellTableViewCell.swift in Sources */,
+				AB27B24C21B1847E0030C281 /* DataViewControllerTableViewController.swift in Sources */,
 				AB27B23721B183160030C281 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,7 +327,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = BucketListApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BucketListApp/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +344,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = BucketListApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BucketListApp/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
